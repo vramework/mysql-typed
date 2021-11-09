@@ -1,0 +1,24 @@
+{
+  "name": "mysql-typed",
+  "version": "0.0.0",
+  "author": "Vlandor LTD",
+  "license": "MIT",
+  "main": "dist/src",
+  "scripts": {
+    "tsc": "rm -rf dist && tsc",
+    "ncu": "ncu",
+    "test": "echo 'No tests'",
+    "test:ci": "echo 'No tests'",
+    "example:schema": "schemats mysql mysql://root@localhost -s schemats -o src/example/db-types.ts -f ./db-json-types -c -e"
+  },
+  "dependencies": {
+    "@vramework/generic": "^0.0.3",
+    "mysql2": "^2.3.2",
+    "snake-case": "^3.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.6",
+    "@vramework/schemats": "latest",
+    "typescript": "^4.4.4"
+  }
+}
